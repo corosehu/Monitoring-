@@ -123,7 +123,7 @@ async function check(username) {
 
 // Configuration
 const TOKEN = "MTM3MDI1NDQxNTE4MDU5OTMxNg.GXQeOv.oUc65LSn0ZbxpIMjVpkjDxJFzQesKGKgueH8Eo";
-const INITIAL_ALLOWED_USER_IDS = ["1219039061591986338"];
+const INITIAL_ALLOWED_USER_IDS = ["1219039061591986338", "1275716886725787720"];
 const CHECK_INTERVAL = 90000;
 
 let watchedAccounts = {}; 
@@ -137,7 +137,6 @@ const client = new Client({
     intents: [
         GatewayIntentBits.Guilds,
         GatewayIntentBits.GuildMessages,
-        GatewayIntentBits.MessageContent,
         GatewayIntentBits.DirectMessages
     ],
 });
